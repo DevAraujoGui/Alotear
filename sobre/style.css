@@ -1,0 +1,74 @@
+/* ─── PAGE EXTENSIONS ─── */
+.page-hero { position: relative; height: 65vh; min-height: 450px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0 8vw; text-align: center; }
+.page-hero.page-hero-small { height: 50vh; min-height: 380px; }
+.page-hero-bg { position: absolute; inset: 0; z-index: 1; }
+.page-hero-bg img { width: 100%; height: 100%; object-fit: cover; animation: slowZoom 20s ease-out forwards; }
+.page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26, 58, 42, 0.8), rgba(26, 58, 42, 0.5), rgba(10, 20, 15, 0.8)); }
+.page-hero-content { position: relative; z-index: 2; padding-top: 100px; display: flex; flex-direction: column; align-items: center; }
+.page-hero-title { font-family: 'Poppins', sans-serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; color: var(--white); line-height: 1.1; letter-spacing: -1px; animation: fadeSlideUp 0.8s ease 0.2s both; }
+.page-hero-title em { font-style: italic; color: var(--yellow); }
+
+@keyframes slowZoom { from { transform: scale(1.05); } to { transform: scale(1); } }
+
+/* MVV - Sobre */
+.mvv { 
+    background: var(--off-white); 
+    padding: 100px 8vw; 
+    position: relative;
+    overflow: hidden;
+}
+
+.mvv::before {
+    content: 'QUEM SOMOS';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(100px, 20vw, 300px);
+    font-weight: 900;
+    color: var(--green-dark);
+    opacity: 0.02;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+}
+.mvv-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    position: relative;
+    z-index: 1;
+}
+.mvv-card { background: white; padding: 40px 32px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); transition: var(--transition); opacity: 0; transform: translateY(30px); animation: fadeSlideUp 0.8s ease forwards; }
+.mvv-card:nth-child(1) { animation-delay: 0.1s; }
+.mvv-card:nth-child(2) { animation-delay: 0.3s; }
+.mvv-card:nth-child(3) { animation-delay: 0.5s; }
+.mvv-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-md); }
+.mvv-card-highlight { background: var(--green-dark); color: white; }
+.mvv-icon { width: 64px; height: 64px; background: var(--green-pale); color: var(--green-dark); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; transition: var(--transition); }
+.mvv-card-highlight .mvv-icon { background: rgba(255, 255, 255, 0.1); color: var(--yellow); }
+.mvv-card h3 { font-size: 24px; font-weight: 600; margin-bottom: 16px; }
+.mvv-card-highlight h3 { color: var(--yellow); }
+.mvv-card p { font-size: 15px; line-height: 1.7; color: var(--text-mid); }
+.mvv-card-highlight p { color: rgba(255, 255, 255, 0.8); }
+
+/* CONTATOS */
+.page-contato { background: var(--white); padding-top: 60px; }
+.contato-desc { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin: 20px 0 32px; }
+.contato-form-container { background: white; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--off-white); }
+.contato-form h3 { font-size: 24px; font-weight: 600; color: var(--green-dark); margin-bottom: 24px; }
+.form-group { margin-bottom: 20px; display: flex; flex-direction: column; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-group label { font-size: 13px; font-weight: 500; color: var(--text-dark); margin-bottom: 8px; }
+.form-group input, .form-group select, .form-group textarea { font-family: inherit; font-size: 15px; padding: 16px; border: 1px solid var(--green-pale); border-radius: var(--radius); background: var(--off-white); color: var(--text-dark); transition: var(--transition); outline: none; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green-light); background: white; box-shadow: 0 0 0 4px rgba(122, 181, 138, 0.1); }
+.submit-btn { display: inline-flex; align-items: center; gap: 12px; background: var(--yellow); color: var(--green-dark); font-family: inherit; font-size: 15px; font-weight: 600; border: none; padding: 18px 32px; border-radius: 100px; cursor: pointer; transition: var(--transition); width: 100%; justify-content: center; margin-top: 10px; }
+.submit-btn:hover { background: var(--green-dark); color: white; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.contato-map-wrapper { margin-top: 60px; border-radius: var(--radius-lg); overflow: hidden; height: 450px; box-shadow: var(--shadow-sm); }
+.contato-map-wrapper iframe { width: 100%; height: 100%; border: none; }
+
+@media (max-width: 1024px) { .mvv-grid { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .form-row { grid-template-columns: 1fr; } .page-hero { padding: 0 6vw; } .contato-form-container { padding: 24px; } }

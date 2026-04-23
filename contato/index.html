@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato — Alotear Urbanismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="../assets/Logo.png">
+</head>
+
+<body>
+    <!-- ─── MOBILE NAV ─── -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+        <a href="../" onclick="closeMobileNav()">Home</a>
+        <a href="../sobre/" onclick="closeMobileNav()">Sobre Nós</a>
+        <a href="../#empreendimentos" onclick="closeMobileNav()">Empreendimentos</a>
+        <a href="./" onclick="closeMobileNav()" style="color: var(--yellow);">Contato</a>
+    </div>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+        <a href="../" class="nav-logo">
+            <img src="../assets/Logo.png" alt="Alotear Urbanismo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../sobre/">Sobre Nós</a></li>
+            <li><a href="../#empreendimentos">Empreendimentos</a></li>
+            <li><a href="./" style="color: var(--yellow);">Contato</a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://www.instagram.com/alotearurbanismo/" target="_blank" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- ─── PAGE HERO ─── -->
+    <section class="page-hero page-hero-small">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" alt="Fale com a Alotear">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="hero-tag">Atendimento</div>
+            <h1 class="page-hero-title">Vamos construir<br><em>algo juntos?</em></h1>
+        </div>
+    </section>
+
+    <!-- ─── CONTATO EXPANDED ─── -->
+    <section class="contato page-contato" id="contato">
+        <div class="contato-inner">
+            <div class="contato-info-panel">
+                <div class="section-label">Fale Conosco</div>
+                <h2 class="section-title">Estamos prontos para <em>atender você</em></h2>
+                <p class="contato-desc">Tire suas dúvidas, saiba mais sobre nossos loteamentos, agende uma visita ou conheça nossas condições de pagamento facilitadas.</p>
+                <div class="contato-details">
+                    <div class="contato-detail">
+                        <div class="contato-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg></div>
+                        <div class="contato-detail-text"><strong>Endereço Sede</strong><span>Av. Beira Mar, 3958 — Meireles, Fortaleza, CE</span></div>
+                    </div>
+                </div>
+
+                <!-- Redes Sociais Section -->
+                <div class="social-connect">
+                    <div class="social-connect-title">Conecte-se Conosco</div>
+                    
+                    <a href="https://www.instagram.com/alotearurbanismo/" target="_blank" class="social-link-card instagram">
+                        <div class="social-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="4"></circle><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </div>
+                        <div class="social-link-text">
+                            <strong>Instagram</strong>
+                            <span>@alotearurbanismo</span>
+                        </div>
+                        <div class="social-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/5585996350057" target="_blank" class="social-link-card whatsapp">
+                        <div class="social-link-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.134 1.537 5.869L0 24l6.282-1.506A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.847 0-3.594-.485-5.109-1.334l-.365-.215-3.73.894.933-3.638-.233-.376A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" /></svg>
+                        </div>
+                        <div class="social-link-text">
+                            <strong>WhatsApp</strong>
+                            <span>Atendimento Imediato</span>
+                        </div>
+                        <div class="social-link-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contato-form-container">
+                <form class="contato-form" action="#" onsubmit="event.preventDefault(); alert('Mensagem enviada!')">
+                    <h3>Envie uma mensagem</h3>
+                    <div class="form-group"><label for="nome">Seu Nome</label><input type="text" id="nome" placeholder="Digite seu nome completo" required></div>
+                    <div class="form-group"><label for="email">E-mail</label><input type="email" id="email" placeholder="seu@email.com" required></div>
+                    <div class="form-group"><label for="mensagem">Sua Mensagem</label><textarea id="mensagem" rows="4" placeholder="Como podemos te ajudar?" required></textarea></div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="../assets/Logo.png" alt="Alotear Urbanismo" class="logo-img"></div>
+                <p class="footer-tagline">Transformando sonhos em uma experiência de vida.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul><li><a href="../">Home</a></li><li><a href="../sobre/">Sobre Nós</a></li><li><a href="../#empreendimentos">Empreendimentos</a></li><li><a href="./">Contato</a></li></ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+
+    <!-- ─── WHATSAPP BTN ─── -->
+    <a href="https://wa.me/5585996350057" class="whatsapp-btn" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.134 1.537 5.869L0 24l6.282-1.506A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.847 0-3.594-.485-5.109-1.334l-.365-.215-3.73.894.933-3.638-.233-.376A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+        </svg>
+    </a>
+</body>
+</html>

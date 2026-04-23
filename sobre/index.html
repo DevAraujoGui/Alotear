@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós — Alotear Urbanismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="../assets/Logo.png">
+</head>
+
+<body>
+    <!-- ─── MOBILE NAV ─── -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+        <a href="../" onclick="closeMobileNav()">Home</a>
+        <a href="./" onclick="closeMobileNav()" style="color: var(--yellow);">Sobre Nós</a>
+        <a href="../#empreendimentos" onclick="closeMobileNav()">Empreendimentos</a>
+        <a href="../contato/" onclick="closeMobileNav()">Contato</a>
+    </div>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+        <a href="../" class="nav-logo">
+            <img src="../assets/Logo.png" alt="Alotear Urbanismo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="./" style="color: var(--yellow);">Sobre Nós</a></li>
+            <li><a href="../#empreendimentos">Empreendimentos</a></li>
+            <li><a href="../contato/">Contato</a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://www.instagram.com/alotearurbanismo/" target="_blank" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- ─── PAGE HERO ─── -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1600&q=80" alt="Sobre a Alotear">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="hero-tag">Conheça nossa história</div>
+            <h1 class="page-hero-title">Urbanismo com<br><em>propósito e visão</em></h1>
+        </div>
+    </section>
+
+    <!-- ─── SOBRE MAIN ─── -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-inner">
+            <div class="sobre-img-wrap">
+                <img class="sobre-img-main" src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=800&q=80" alt="Urbanismo Alotear">
+                <div class="sobre-img-accent"></div>
+                <div class="sobre-img-card">
+                    <div class="sobre-img-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg></div>
+                    <div class="sobre-img-card-text"><strong>15+ Anos</strong><span>No mercado imobiliário</span></div>
+                </div>
+            </div>
+            <div class="sobre-content">
+                <div class="section-label">Quem somos</div>
+                <h2 class="section-title">Transformando<br><em>realidades urbanas</em></h2>
+                <p class="sobre-text">Com experiência de anos no mercado imobiliário, a Alotear Urbanismo atua transformando realidades urbanas com dinamismo e versatilidade. Seus loteamentos estão sempre em busca de inovações administrativas e tecnológicas, respeitando e preservando o meio ambiente para a melhoria da qualidade de vida da sociedade.<br><br>Com ética e transparência em seus negócios, conquistou o reconhecimento de sócios e parceiros e se prepara para maiores conquistas nos próximos anos.</p>
+                <div class="sobre-features">
+                    <div class="sobre-feature"><div class="sobre-feature-dot"></div><span>Inovações administrativas e tecnológicas</span></div>
+                    <div class="sobre-feature"><div class="sobre-feature-dot"></div><span>Preservação e respeito ao meio ambiente</span></div>
+                    <div class="sobre-feature"><div class="sobre-feature-dot"></div><span>Ética e transparência nos negócios</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── MISSÃO, VISÃO, VALORES ─── -->
+    <section class="mvv">
+        <div class="mvv-grid">
+            <div class="mvv-card">
+                <div class="mvv-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                <h3>Missão</h3>
+                <p>Desenvolver loteamentos com excelência, qualidade e foco na valorização do ambiente, entregando espaços prontos para a construção do futuro das famílias brasileiras.</p>
+            </div>
+            <div class="mvv-card mvv-card-highlight">
+                <div class="mvv-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+                <h3>Visão</h3>
+                <p>Ser reconhecida nacionalmente como uma das principais referências em loteamentos urbanos, destacando-se pela inovação, sustentabilidade e relacionamento com o cliente.</p>
+            </div>
+            <div class="mvv-card">
+                <div class="mvv-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                <h3>Valores</h3>
+                <p>Transparência, comprometimento, respeito ao meio ambiente e busca contínua por inovação e desenvolvimento humano.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo"><img src="../assets/Logo.png" alt="Alotear Urbanismo" class="logo-img"></div>
+                <p class="footer-tagline">Transformando sonhos em uma experiência de vida. Urbanismo com propósito e compromisso com a qualidade de vida.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul><li><a href="../">Home</a></li><li><a href="./">Sobre Nós</a></li><li><a href="../#empreendimentos">Empreendimentos</a></li><li><a href="../contato/">Contato</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul><li><a href="https://wa.me/5585996350057">+55 (85) 99635-0057</a></li><li><a href="../contato/">Av. Beira Mar, 3958 — Sala 11</a></li><li><a href="../contato/">Fortaleza, CE</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© 2025 Alotear Urbanismo. Todos os direitos reservados.</span></div>
+    </footer>
+    <script src="../main.js"></script>
+
+    <!-- ─── WHATSAPP BTN ─── -->
+    <a href="https://wa.me/5585996350057" class="whatsapp-btn" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.134 1.537 5.869L0 24l6.282-1.506A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.847 0-3.594-.485-5.109-1.334l-.365-.215-3.73.894.933-3.638-.233-.376A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+        </svg>
+    </a>
+</body>
+</html>
